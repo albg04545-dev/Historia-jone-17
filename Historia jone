@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historia Jonë ❤️</title>
+
+<style>
+• {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+min-height: 100vh;
+padding: 20px 0;
+font-family: Arial, sans-serif;
+color: white;
+text-align: center;
+background: linear-gradient(135deg, #25001e, #850039, #ff1744);
+}
+
+.card {
+width: 92%;
+max-width: 440px;
+margin: auto;
+padding: 25px 18px;
+border: 1px solid #ffffff45;
+border-radius: 25px;
+background: #ffffff16;
+box-shadow: 0 0 30px #ff176755;
+backdrop-filter: blur(12px);
+}
+
+.main-heart {
+font-size: 75px;
+animation: beat 1s infinite;
+}
+
+h1 {
+font-size: 32px;
+margin: 12px 0;
+}
+
+.subtitle {
+color: #ffd7e5;
+margin-bottom: 25px;
+}
+
+.counter {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px;
+}
+
+.box {
+padding: 17px 5px;
+background: #ffffff20;
+border-radius: 17px;
+}
+
+.number {
+font-size: 32px;
+font-weight: bold;
+color: #ffb5d0;
+}
+
+.label {
+margin-top: 7px;
+}
+
+.date {
+margin: 22px 0;
+line-height: 1.8;
+}
+
+.green-button {
+width: 100%;
+padding: 16px 10px;
+margin: 18px 0 20px;
+border: none;
+border-radius: 14px;
+background: #16c765;
+color: white;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0 5px 18px #00ff7550;
+}
+
+.green-button:active {
+transform: scale(.97);
+}
+
+.story {
+display: none;
+text-align: left;
+padding: 22px 17px;
+margin-top: 10px;
+border-radius: 18px;
+background: #38001f55;
+line-height: 1.9;
+animation: appear .8s ease;
+}
+
+.story h2 {
+text-align: center;
+color: #ffb3d1;
+margin-bottom: 20px;
+line-height: 1.5;
+}
+
+.story p {
+margin-bottom: 17px;
+}
+
+.signature {
+text-align: center;
+font-size: 19px;
+font-weight: bold;
+color: #ffb4d0;
+}
+
+.floating-heart {
+position: fixed;
+bottom: -40px;
+pointer-events: none;
+animation: floatUp 8s linear forwards;
+z-index: 5;
+}
+
+@keyframes beat {
+50% {
+transform: scale(1.15);
+}
+}
+
+@keyframes appear {
+from {
+opacity: 0;
+transform: translateY(15px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes floatUp {
+to {
+transform: translateY(-110vh) rotate(25deg);
+opacity: 0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="main-heart">❤️</div>
+
+<h1>Historia Jonë</h1>
+
+<p class="subtitle">
+Që nga dita kur u njohëm... 💕
+</p>
+
+<div class="counter">
+
+<div class="box">
+<div class="number" id="days">0</div>
+<div class="label">Ditë ❤️</div>
+</div>
+
+<div class="box">
+<div class="number" id="hours">0</div>
+<div class="label">Orë 🕒</div>
+</div>
+
+<div class="box">
+<div class="number" id="minutes">0</div>
+<div class="label">Minuta 💗</div>
+</div>
+
+<div class="box">
+<div class="number" id="seconds">0</div>
+<div class="label">Sekonda ✨</div>
+</div>
+
+</div>
+
+<div class="date">
+📅 18 Korrik 2026<br>
+🕝 Ora 14:30
+</div>
+
+<p>
+Kam një mesazh që dua ta lexosh me zemër... ❤️
+</p>
+
+<button class="green-button"
+id="openButton"
+onclick="openStory()">
+💚 Hap mesazhin tim për ty 💚
+</button>
+
+<div class="story" id="story">
+
+<h2>📖 Historia e dy zemrave tona 💗</h2>
+
+<p>
+Nuk e di nëse fati i kishte shkruar emrat tanë diku
+përpara se të njiheshim, por di një gjë: dita kur hyre
+në jetën time do të mbetet gjithmonë një nga ditët më
+të veçanta për mua. ❤️
+</p>
+
+<p>
+Më 18 korrik 2026, në orën 14:30, filloi një kapitull
+që dua ta ruaj në zemrën time për një kohë të gjatë.
+Ndoshta në atë moment nuk e kuptoja se sa shumë do të
+kishte rëndësi prania jote për mua. Disa njerëz nuk
+vijnë thjesht për të kaluar në jetën tonë; ata vijnë
+për të lënë gjurmë. Ti je një nga ata njerëz për mua. 💕
+</p>
+
+<p>
+Kur mendoj për ne, imagjinoj një histori që ndërtohet
+pak nga pak: me biseda të gjata, buzëqeshje të papritura,
+përqafime që të bëjnë të ndihesh i sigurt dhe kujtime
+të vogla që bëhen të çmuara me kalimin e kohës.
+</p>
+
+<p>
+Dua të jem personi me të cilin mund të flasësh për
+gjithçka. Dua të të dëgjoj kur ke nevojë të flasësh,
+të të mbështes kur gjërat bëhen të vështira dhe të
+gëzohem sinqerisht për çdo gjë të mirë që të ndodh.
+Për mua, dashuria nuk është vetëm të thuash fjalë të
+bukura; është të tregosh respekt, të jesh i sinqertë
+dhe të kujdesesh për njëri-tjetrin. ❤️
+</p>
+
+<p>
+Nuk mund të premtoj se çdo ditë do të jetë perfekte.
+Por dua që, edhe kur nuk pajtohemi, të gjejmë mënyrën
+për të folur me mirësi dhe për ta kuptuar njëri-tjetrin.
+Dua që të ndihemi të lirë të jemi vetvetja, pa pasur
+frikë të tregojmë çfarë ndiejmë.
+</p>
+
+<p>
+Shpresoj të kemi shumë kujtime të tjera: shëtitje të
+zakonshme që bëhen të veçanta vetëm sepse jemi bashkë,
+të qeshura për gjëra të vogla dhe fotografi që një ditë
+do t'i shohim me buzëqeshje. Nuk ka rëndësi që çdo çast
+të duket si përrallë. Shpesh, gjërat më të bukura janë
+ato të thjeshtat. 💗
+</p>
+
+<p>
+Sa herë që numëruesi shton një sekondë, ai më kujton
+se koha na jep mundësinë të ndërtojmë diçka të bukur,
+një kujtim pas tjetrit. Nuk dua ta mat dashurinë vetëm
+me ditë, orë apo minuta, por me mënyrën se si e bëjmë
+njëri-tjetrin të ndihet.
+</p>
+
+<p>
+Nuk e di çdo faqe që do të vijë më pas, por shpresoj
+që të kemi shumë faqe të tjera për të shkruar së bashku.
+Dua që historia jonë të ketë sinqeritet, besim, respekt
+dhe plot momente që do të na bëjnë të buzëqeshim kur
+t'i kujtojmë. 🥹❤️
+</p>
+
+<p class="signature">
+Ti je pjesë e historisë sime të preferuar. 💖
+<br><br>
+Me dashuri, gjithmonë. ❤️
+</p>
+
+</div>
+</div>
+
+<script>
+const startDate = new Date(2026, 6, 18, 14, 30, 0);
+
+function updateCounter() {
+
+const diff = Date.now() - startDate.getTime();
+
+if (diff < 0) {
+["days", "hours", "minutes", "seconds"].forEach(id => {
+document.getElementById(id).textContent = "0";
+});
+return;
+}
+
+const total = Math.floor(diff / 1000);
+
+document.getElementById("days").textContent =
+Math.floor(total / 86400);
+
+document.getElementById("hours").textContent =
+Math.floor((total % 86400) / 3600);
+
+document.getElementById("minutes").textContent =
+Math.floor((total % 3600) / 60);
+
+document.getElementById("seconds").textContent =
+total % 60;
+}
+
+function openStory() {
+
+document.getElementById("story").style.display = "block";
+
+document.getElementById("openButton").textContent =
+"❤️ Mesazhi u hap ❤️";
+
+document.getElementById("story").scrollIntoView({
+behavior: "smooth",
+block: "start"
+});
+}
+
+function createHeart() {
+
+const heart = document.createElement("div");
+
+heart.className = "floating-heart";
+
+heart.textContent = ["❤️", "💕", "💗", "💖"][ Math.floor(Math.random() * 4) ];
+
+heart.style.left = Math.random() * 100 + "vw";
+
+heart.style.fontSize =
+(18 + Math.random() * 20) + "px";
+
+heart.style.animationDuration =
+(5 + Math.random() * 5) + "s";
+
+document.body.appendChild(heart);
+
+setTimeout(() => heart.remove(), 10000);
+}
+
+updateCounter();
+
+setInterval(updateCounter, 1000);
+
+setInterval(createHeart, 800);
+</script>
+
+</body>
+</html>
+
+
